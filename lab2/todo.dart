@@ -8,23 +8,21 @@ class TodoApp {
 
 void main() {
   var app = TodoApp();
-  app.add("Buy milk");
-  app.add("Study Dart");
-  app.add("Go to GYM");
-  app.add("Go to sleep");
-  app.add("Learn openGL");
-  app.add("Learn Unity");
-  app.add("Learn Unreal Engine");
-  app.add("learn Quantum Computing");
-  app.add("Learn Astrophysics");
+  app.add("Buy milk"); //0
+  app.add("Study Dart"); //1
+  app.add("Go to GYM"); //2
+  app.add("Go to sleep"); //3
+  app.add("Learn openGL"); //4
+  app.add("Learn Unity"); //5
+  app.add("Learn Unreal Engine"); //6
+  app.add("learn Quantum Computing"); //7
+  app.add("Learn Astrophysics"); //8
 
 
   app.show();
-
-  app.remove(0);
-
-
-
+  //Remove astrophysics, OpenGL
+  app.remove(8);
+  app.remove(4);
 
   app.show();
 }
