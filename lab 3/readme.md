@@ -2,6 +2,7 @@
 
 - oop concepts
 - Multi Eval
+- UML Class diagram
 
 # Tasks:
 
