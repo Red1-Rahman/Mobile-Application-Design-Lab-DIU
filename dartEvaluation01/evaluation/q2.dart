@@ -8,13 +8,13 @@ class bankAccount {
 
 class savingsAccount extends bankAccount {
   
-  savingsAccount(this.holderName, this.balance);
+  savingsAccount(this.holderName, this.balance) : super(holderName, balance);
 
-  void deposit(double amount) {
+  double deposit(double amount) {
     balance += amount;
     return balance;
   }
-  void withdraw(double amount) {
+  double withdraw(double amount) {
     
       balance -= amount;
       return balance;
