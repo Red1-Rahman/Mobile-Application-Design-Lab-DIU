@@ -7,14 +7,14 @@ double calculateAverage(double total){
   return average;
 }
 bool isPassed(double average){
-  if(average >= 5.0){
+  if(average >= 6.66){
     return true;
   } else {
     return false;
   }
 }
 void main(){
-  // last four digits of student ID: 1127
+  print('Redwan Rahman, 024222005101127');
   double marks1 = 7.0;
   double marks2 = 2.0;
   double marks3 = 11.0;
