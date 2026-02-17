@@ -2,16 +2,13 @@ class bankAccount {
   String holderName;
   double balance;
 
+  bankAccount(this.holderName, this.balance);
+
 }
 
 class savingsAccount extends bankAccount {
-
   
-  savingsAccount() {
-    holderName = this.holderName;
-    balance = this.balance;
-  }
-
+  savingsAccount(this.holderName, this.balance);
 
   void deposit(double amount) {
     balance += amount;
@@ -26,9 +23,8 @@ class savingsAccount extends bankAccount {
 }
 
 void main(){
-  savingsAccount account = savingsAccount('Redwan Rahman', 24222000501127.0);
-  account.holderName = 'Redwan Rahman';
-  account.balance = 24222000501127.0;
+  savingsAccount account = savingsAccount('Redwan Rahman', 242220005101127);
+
 
   account.deposit(1127.0);
   print('Balance after deposit: ${account.balance}');
